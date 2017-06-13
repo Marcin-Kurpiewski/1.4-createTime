@@ -1,0 +1,23 @@
+{
+  "name": "1.4-createtime",
+  "version": "1.0.0",
+  "description": "\"Create time\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcin-Kurpiewski/1.4-createTime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcin-Kurpiewski/1.4-createTime/issues"
+  },
+  "homepage": "https://github.com/Marcin-Kurpiewski/1.4-createTime#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  }
+}
