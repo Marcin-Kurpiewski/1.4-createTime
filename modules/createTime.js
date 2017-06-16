@@ -1,10 +1,16 @@
+var os = require('os');
 
-function createTime(){
+
+var inputS = os.uptime(((inputS / 60)*60).toFixed(0));
+console.log(inputS);
+
+function createTime(inputS){
 
 
 process.stdin.on('readable', function(){
-	process.stdout.write("Enter the numbers of seconds :\n");
-	var inputS= process.stdin.read();
+	// process.stdout.write("Enter the numbers of seconds :\n");
+	// var inputS= process.stdin.read();
+		// var inputS=uptime;
 		seconds=Math.floor(inputS % 3600 % 60),
 		minutes=Math.floor(inputS % 3600 /60),
 		hours = Math.floor(inputS / 3600);

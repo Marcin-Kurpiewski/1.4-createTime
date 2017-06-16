@@ -15,7 +15,9 @@ function getOSinfo(){
 	var cpu = os.cpus()[0].model;
 		console.log(colors.blue('CPU model:'), cpu);
 	var uptime = os.uptime();
-		console.log(colors.cyan('Uptime: ~'), (uptime / 60).toFixed(0), 'min');
+	var createTime= require('../modules/createTime');
+		// console.log(colors.cyan('Uptime: ~'), ((uptime / 60)*60).toFixed(0), 'sec');
+		console.log(colors.cyan('Uptime: ~'), createTime);
 	var userInfo = os.userInfo();
 		console.log(colors.magenta('User name:'), userInfo.username);
 		console.log(colors.random('Home dir:'), userInfo.homedir);
