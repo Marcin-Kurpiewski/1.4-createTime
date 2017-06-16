@@ -1,6 +1,6 @@
 var os = require('os');
 var colors = require('colors');
-var createTimes = require('./createTime')
+var createTime = require('./createTime')
 
 function getOSinfo(){
 	var type = os.type();
@@ -14,10 +14,10 @@ function getOSinfo(){
 		console.log(colors.red('Release:'), release);
 	var cpu = os.cpus()[0].model;
 		console.log(colors.blue('CPU model:'), cpu);
-	var uptime = os.uptime();
-	var createTime= require('../modules/createTime');
+	
+	
 		// console.log(colors.cyan('Uptime: ~'), ((uptime / 60)*60).toFixed(0), 'sec');
-		console.log(colors.cyan('Uptime: ~'), createTime);
+		console.log(colors.cyan('Uptime: ~'), createTime.timeC(os.uptime()));
 	var userInfo = os.userInfo();
 		console.log(colors.magenta('User name:'), userInfo.username);
 		console.log(colors.random('Home dir:'), userInfo.homedir);
